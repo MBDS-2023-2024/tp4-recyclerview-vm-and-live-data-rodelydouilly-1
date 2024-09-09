@@ -15,7 +15,7 @@ class ListUserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val deleteButton: ImageButton = itemView.findViewById(R.id.item_list_user_delete_button)
 
     fun bind(user: User, callback: UserListAdapter.Listener) {
-        // TODO : Utiliser une librairie pour charger l'image (glide, coil, )
+        // TODO : Utiliser une librairie pour charger image (glide, coil, )
         username.text = user.login
         deleteButton.setOnClickListener { callback.onClickDelete(user) }
     }
