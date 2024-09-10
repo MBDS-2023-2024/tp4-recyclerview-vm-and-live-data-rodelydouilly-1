@@ -4,22 +4,34 @@ import org.mbds.unice.github.data.api.ApiService
 import org.mbds.unice.github.data.api.FakeApiServiceGenerator.FAKE_USERS_RANDOM
 import org.mbds.unice.github.data.model.User
 
-class UserRepository(
-    private val apiService: ApiService
+class  UserRepository(
+private val apiService: ApiService
 ) {
     fun getUsers(): List<User> {
-        // Should return the list of users retrieved from the api service
         return apiService.getUsers()
     }
 
     fun addRandomUser() {
-        //Should add a random user
         apiService.addRandomUser()
     }
 
     fun deleteUser(user: User) {
-        // Should remove the user
         apiService.deleteUser(user)
+    }
 
+    fun sortUsersByName(ascending: Boolean) {
+        apiService.sortUsersByName(ascending)
+    }
+
+    fun sortUsersByDate(ascending: Boolean) {
+        apiService.sortUsersByDate(ascending)
+    }
+
+    fun filterUsersByStatus(active: Boolean) {
+        apiService.filterUsersByStatus(active)
+    }
+
+    fun searchUserByUsername(newText: String?): List<User> {
+        return apiService.searchUserByUsername(newText)
     }
 }

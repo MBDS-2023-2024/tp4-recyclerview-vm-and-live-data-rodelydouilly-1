@@ -6,5 +6,9 @@ interface ApiService {
     fun getUsers(): List<User>
     fun addRandomUser()
     fun deleteUser(username: User)
-    abstract fun getUsersFromApi(): Collection<User>
+    fun sortUsersByName(ascending: Boolean)
+    fun sortUsersByDate(ascending: Boolean)
+    fun filterUsersByStatus(active: Boolean)
+    fun searchUserByUsername(newText: String?): List<User>
+
 }

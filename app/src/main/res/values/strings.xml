@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MagicGithub</string>
+    <string name="trier_par_nom_a_z">trier par nom a-z</string>
+    <string name="trier_par_nom_z_a">trier par nom z-a</string>
+    <string name="trier_par_date_croissant">trier par date croissant</string>
+    <string name="trier_par_date_d_croissant">trier par date decroissant</string>
+    <string name="afficher_les_d_sactiv_s_avant">afficher les desactives avant</string>
+    <string name="afficher_les_activ_s_avant">afficher les actives avant</string>
+    <string name="search">search</string>
+    <string name="textview">textview</string>
 </resources>
